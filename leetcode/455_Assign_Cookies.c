@@ -1,3 +1,10 @@
+/**
+ * 时间复杂度 O(mlogm+nlogn)
+ * 空间复杂度：O(logm+logn)
+ * @param base  [description]
+ * @param start [description]
+ * @param end   [description]
+ */
 void quicksort(int * base, int start, int end) {
     int sentry = 0;
     int i = start;
