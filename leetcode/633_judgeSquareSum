@@ -1,0 +1,18 @@
+class Solution {
+public:
+    bool judgeSquareSum(int c) {
+        int mid_num = (int )sqrt(c >> 1 );
+        int max_num = (int )sqrt(c);
+        int a = 0, b = max_num;
+        while (a <= b) {
+            if ((a * a + b * b) == c) {
+                return true;
+            } else if ((a * a + b * b) > c) {
+                --b;
+            } else {
+                ++a;
+            }
+        }
+        return false;
+    }
+};
